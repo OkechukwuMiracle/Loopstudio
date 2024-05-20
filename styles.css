@@ -17,7 +17,7 @@
 .header {
     width: 80%;
     position: absolute;
-    top: 9%;
+    top: 8%;
     left: 11%;
     display: flex;
     justify-content: space-between;
@@ -252,6 +252,22 @@ h6 {
 .copyright {
     color: hsl(0, 0%, 55%);
     font-family: "Alata", sans-serif;
+}
+
+.menu {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    position: fixed;
+    line-height: 3rem;
+    z-index: 1;
+    top: 19vh;
+    height: 81vh;
+    background: black;
+    color: hsl(0, 0%, 55%);
+    font-family: "Alata", sans-serif;
+    padding-top: 4rem;
+    padding-left: 2rem;
 }
 
 @media screen and (max-width: 885px) {
@@ -499,8 +515,20 @@ h6 {
          display: flex;
          align-items: center;
          padding-top: 1.5rem;
-         font-size: 0.9rem;
+         font-size: 0.7rem;
          margin: 0 auto; 
+    }
+    .menu.visible {
+        display: flex;
+    }
+    .menu.invisible {
+        display: none;
+    }
+    .hamburger-container-1.invisible {
+        display: none;
+    }
+    .hamburger-container-2.visible {
+        display: block;
     }
 
 }
