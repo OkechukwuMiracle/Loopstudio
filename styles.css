@@ -17,7 +17,7 @@
 .header {
     width: 80%;
     position: absolute;
-    top: 8%;
+    top: 6%;
     left: 11%;
     display: flex;
     justify-content: space-between;
@@ -259,14 +259,14 @@ h6 {
     flex-direction: column;
     width: 100%;
     position: fixed;
-    line-height: 3rem;
+    line-height: 4rem;
     z-index: 1;
-    top: 19vh;
-    height: 81vh;
+    top: 0vh;
+    height: 100vh;
     background: black;
     color: hsl(0, 0%, 55%);
     font-family: "Alata", sans-serif;
-    padding-top: 4rem;
+    padding-top: 3rem;
     padding-left: 2rem;
 }
 
@@ -344,6 +344,9 @@ h6 {
     .section_4 {
         padding: 1.5rem 3rem;
     }
+    .general-5 {
+        gap: 0.6rem;
+    }
     .icon-container {
         width: 18%;
     }
@@ -368,8 +371,9 @@ h6 {
         object-fit: cover;
     }
     .header {
-        top: 10%;
-        width: 92%;
+        top: 6%;
+        left: 7%;
+        width: 87%;
     }
     .hamburger-container-1 {
         display: block;
@@ -515,7 +519,8 @@ h6 {
          display: flex;
          align-items: center;
          padding-top: 1.5rem;
-         font-size: 0.7rem;
+         font-size: 0.9rem;
+         gap: 0.6rem;
          margin: 0 auto; 
     }
     .menu.visible {
@@ -528,7 +533,22 @@ h6 {
         display: none;
     }
     .hamburger-container-2.visible {
-        display: block;
+        display: flex;
+        position: absolute;
+        right: 6%;
+    }
+    .menu-header {
+        display: flex ;
+        justify-content: space-between;
+        margin-bottom: 8rem;
+        top: 8%;
+    }
+    .menu-h4 {
+        color: white;
+        font-size: 2rem;
+        font-family: "Alata", sans-serif;
+        position: absolute;
+        top: 6%;
     }
 
 }
